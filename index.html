@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Graphical MUD</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.166.1/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.166.1/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="game-container">
+        <div id="viewport"></div>
+        <div id="ui-container">
+            <div id="chat-log"></div>
+            <div id="input-area">
+                <input type="text" id="user-input" placeholder="Enter command...">
+                <button id="send-button">Send</button>
+            </div>
+             <div id="npc-interaction">
+                <h3 id="npc-name"></h3>
+                <div id="npc-dialogue"></div>
+                <input type="text" id="player-response" placeholder="Your response...">
+                <button id="respond-button">Respond</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
+
