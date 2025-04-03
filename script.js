@@ -178,7 +178,7 @@ function addNPC(npcId, name, description, startingRoomId, dialogueStyle, isBanke
         // Add NPC mesh as a child of the room mesh ONLY IF rooms don't move
         // If rooms might move/unload, keep NPCs in the main scene and manage visibility
         // room.mesh.add(npcMesh); // Option 1: Child of room
-        npc.mesh.visible = (gameState.currentRoom?.id === startingRoomId); // Option 2: Manage visibility
+        npcMesh.visible = (gameState.currentRoom?.id === startingRoomId); // Option 2: Manage visibility
     }
 }
 
